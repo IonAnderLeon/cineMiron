@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import com.example.cinemiron.screens.FilmInfoScreen
 import com.example.pruebas_apis.ui.theme.CineMironTheme
 
 class MainActivity : ComponentActivity() {
@@ -17,11 +18,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CineMironTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                FilmInfoScreen()
             }
         }
     }
